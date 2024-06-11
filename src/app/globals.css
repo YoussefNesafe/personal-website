@@ -7,6 +7,6 @@
     @apply bg-background flex flex-col items-center text-white
   }
   section {
-    @apply w-[91.111vw] tablet:w-[90vw] desktop:w-[1024px] 
+    @apply w-[91.111vw] tablet:w-[90vw] desktop:w-[74.963vw] 
   }
 }
