@@ -1,9 +1,15 @@
+import PageTitle from '@/components/PageTitle'
 import React from 'react'
 
 
 const ContactsPage = () => {
   return (
-    <div>Contacts Page</div>
+    <>
+      <PageTitle
+        title='Contacts'
+        description="Let's talk"
+      />
+    </>
   )
 }
 

@@ -7,7 +7,7 @@ const HomePage = () => {
       <section >
         <SectionTitle
           title='projects'
-          link={{ title: 'View all', href: '/', }}
+          link={{ label: 'View all', href: '/works', }}
           line={{ size: 'xl', }}
         />
         <SectionTitle

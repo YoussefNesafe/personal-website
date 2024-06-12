@@ -9,4 +9,11 @@
   section {
     @apply w-[91.111vw] tablet:w-[90vw] desktop:w-[74.963vw] 
   }
+  .banner{
+    @apply min-h-screen bg-black z-10 fixed top-0 w-1/4;
+  }
+  .container{
+    @apply w-[91.111vw] tablet:w-[90vw] desktop:w-[74.963vw]
+  }
 }
+

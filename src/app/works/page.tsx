@@ -1,7 +1,7 @@
 import PageTitle from '@/components/PageTitle'
 import React from 'react'
 
-const ProjectsPage = () => {
+const WorksPage = () => {
   return (
     <>
       <PageTitle
@@ -12,4 +12,4 @@ const ProjectsPage = () => {
   )
 }
 
-export default ProjectsPage
+export default WorksPage

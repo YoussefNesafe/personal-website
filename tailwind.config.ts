@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -14,7 +15,7 @@ const config: Config = {
     extend: {
       colors: {
         background: '#282C33',
-        priamry: '#C778DD'
+        primary: '#C778DD'
       }
     },
   },

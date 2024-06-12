@@ -1,9 +1,9 @@
-import { LinkProps } from "next/link";
-import { HTMLAttributes, ReactHTMLElement } from "react";
+import { HTMLAttributes } from "react";
+import { TransitionLinkProps } from "../TransitionLink";
 
 export  type SectionTitleProps = {
   title: string;
-  link? : LinkProps & {title : string}
+  link? : TransitionLinkProps
 } & HTMLAttributes<HTMLElement>
 
 
