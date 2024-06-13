@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={firaCode.className}>
-        <main className="container">
+        <main>
           <Navbar />
           {children}
         </main>
