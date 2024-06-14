@@ -19,10 +19,10 @@ const MobileLinks = () => {
   return (
     <Sheet >
       <SheetTrigger className='desktop:hidden'>
-        <MenuIcon className='w-[6.408vw] tablet:w-[3vw] desktop:w-[1.248vw] h-[6.408vw] tablet:h-[3vw] desktop:h-[1.248vw]' />
+        <MenuIcon className='w-[6.672vw] tablet:w-[3vw] desktop:w-[1.752vw] h-[6.672vw] tablet:h-[3vw] desktop:h-[1.752vw]' />
       </SheetTrigger>
       <SheetContent className='desktop:hidden'>
-        <div className="flex pt-[5.56vw] tablet:pt-[1.25vw] flex-col gap-[8.544vw] tablet:gap-[4vw] ">
+        <div className="flex pt-[13.9vw] tablet:pt-[6.25vw] flex-col gap-[8.896vw] tablet:gap-[4vw] ">
           {
             links.map(
               (link) => <SheetClose key={link.label} className='text-start'>
@@ -30,7 +30,7 @@ const MobileLinks = () => {
                   {...link}
                   prefix='#'
                   className={twMerge(
-                    'text-[8.544vw] tablet:text-[4vw] py-[2.78vw] tablet:py-[1.25vw]',
+                    'text-[8.896vw] tablet:text-[4vw]',
                     link?.href === pathname ? '' : 'text-gray'
                   )}
                 />

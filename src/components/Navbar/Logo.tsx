@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div className='flex items-center gap-[2.136vw] tablet:gap-[1vw] desktop:gap-[0.416vw]'>
+    <div className='flex items-center gap-[2.224vw] tablet:gap-[1vw] desktop:gap-[0.584vw]'>
       <Image
         src='/images/logo-bgP.svg'
         alt='logo'
