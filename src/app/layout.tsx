@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Suspense } from "react";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={firaCode.className}>
         <main>
-          <Navbar />
+          <Suspense>
+            <Navbar />
+          </Suspense>
           {children}
         </main>
       </body>

@@ -1,26 +1,21 @@
-import React, { Suspense } from 'react'
-import TransitionLink from '@/components/TransitionLink'
-import { englishLocale } from '@/locales/en'
-import Image from 'next/image'
 import Logo from './Logo'
 import DesktopLinks from './DesktopLinks'
 import MobileLinks from './MobileLinks'
+import { Suspense } from 'react'
 
 const Navbar = () => {
 
   return (
-    <>
-      <header
-        className='flex justify-between pt-[16px] pb-[8px] tablet:pt-[32px] tablet:pb-[8px] desktop:pt-[32px] desktop:pb-[8px]'
-      >
-        <Logo />
-        <Suspense>
-          <DesktopLinks />
-          <MobileLinks />
-        </Suspense>
-      </header>
+    <nav
+      className='flex justify-between pt-[4.448vw] pb-[2.224vw] tablet:pt-[4vw] tablet:pb-[1vw] desktop:pt-[2.336vw] desktop:pb-[0.584vw] '
+    >
+      <Logo />
 
-    </>
+      <DesktopLinks />
+      <Suspense>
+        <MobileLinks />
+      </Suspense>
+    </nav>
   )
 }
 

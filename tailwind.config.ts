@@ -15,7 +15,8 @@ const config: Config = {
     extend: {
       colors: {
         background: '#282C33',
-        primary: '#C778DD'
+        primary: '#C778DD',
+        gray: '#ABB2BF'
       },
       keyframes: {
         "accordion-down": {

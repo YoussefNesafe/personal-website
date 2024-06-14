@@ -9,8 +9,8 @@ const Logo = () => {
         alt='logo'
         width={21}
         height={21}
-        className='w-[5.607vw] tablet:w-[2.625vw] desktop:w-[1.092vw] h-[5.607vw] tablet:h-[2.625vw] desktop:h-[1.092vw]  ' />
-      <span className='text-[4.272vw] tablet:text-[2vw] desktop:text-[0.832vw] font-bold'>Youssef</span>
+        className='w-[5.838vw] tablet:w-[2.625vw] desktop:w-[1.533vw] h-[5.838vw] tablet:h-[2.625vw] desktop:h-[1.533vw]  ' />
+      <span className='text-[4.448vw] tablet:text-[2vw] desktop:text-[1.168vw] font-bold'>Youssef</span>
     </div>
   )
 }
