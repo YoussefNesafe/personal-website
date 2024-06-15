@@ -1,20 +1,35 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "@/utils/animations"
-import { HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
 import RightArrow from "../icons/RightArrow";
+import { HTMLAttributes } from "react";
+import { cn } from "@/lib/utils";
+import { cva, VariantProps } from "class-variance-authority";
 
 export type TransitionLinkProps = {
   href: string;
   label: string;
   arrow?: boolean;
-} & HTMLAttributes<HTMLElement>
+} & HTMLAttributes<HTMLElement> & VariantProps<typeof button>
 
-const TransitionLink = ({ href, label, arrow = false, prefix, ...props }: TransitionLinkProps) => {
-  const router = useRouter()
-  const pathname = usePathname()
+export const button = cva(
+  ['flex items-center text-[16px] tablet:text-[16px] desktop:text-[16px] px-[16px] py-[8px] tablet:px-[16px] tablet:py-[8px] desktop:px-[16px] desktop:py-[8px] transition-all']
+  , {
+    variants: {
+      theme: {
+        primary: 'border border-primary font-medium hover:bg-primary/20',
+        secondary: 'border border-gray font-medium hover:bg-gray/20',
+        text: 'border-none hover:none',
+      }
+    },
+    defaultVariants: {
+      theme: 'text'
+    }
+  })
 
+const TransitionLink = ({ href, label, arrow = false, theme, prefix, ...props }: TransitionLinkProps) => {
+  const router = useRouter();
+  const pathname = usePathname();
   const handleClick = () => {
     if (pathname !== href) {
       animatePageOut(href, router)
@@ -23,9 +38,9 @@ const TransitionLink = ({ href, label, arrow = false, prefix, ...props }: Transi
 
   return (
     <button
-      className={twMerge('flex items-center text-[3.889vw] tablet:text-[2.25vw] desktop:text-[1.171vw]', props?.className)}
-      onClick={handleClick}
       {...props}
+      className={cn(button({ theme }), props?.className)}
+      onClick={handleClick}
     >
       {
         prefix ? <span className='text-primary mr-[1.111vw] tablet:mr-[0.5vw] desktop:mr-[0.293vw]'>{prefix}</span> : <></>
