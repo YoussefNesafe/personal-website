@@ -38,11 +38,11 @@ const config: Config = {
         },
         "media-line":{
           from : {height: "0"},
-          to: { height: "13.943vw"}
+          to: { height: "9vw"}
         },
         "media-balls":{
           from : {transform: "translateY(0)"},
-          to: {transform: "translateY(14.527vw)"}
+          to: {transform: "translateY(10vw)"}
         },
         "email-icon":{
           from : { transform: "translateY(0)"},

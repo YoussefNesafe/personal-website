@@ -3,9 +3,9 @@ import Link from "next/link"
 
 const Media = () => {
   return (
-    <div className="absolute hidden desktop:block top-0 desktop:left-[2.343vw] ">
-      <div className="desktop:w-[0.073vw] desktop:h-[13.943vw] bg-gray animate-media-line absolute" />
-      <div className="animate-media-balls relative desktop:-left-[1.095vw] desktop:translate-y-[14.527vw] flex flex-col desktop:gap-[0.584vw]">
+    <div className=" hidden desktop:block  desktop:left-[2.343vw] z-50 fixed top-0">
+      <div className="desktop:w-[0.073vw] desktop:h-[9vw] bg-gray animate-media-line absolute" />
+      <div className="animate-media-balls relative desktop:-left-[1.095vw] desktop:translate-y-[10vw] flex flex-col desktop:gap-[0.584vw]">
         <Link href='https://www.linkedin.com/in/youssef-nesafe/' target='_blank'>
           <Image
             src='/icons/Linkedin.svg'
