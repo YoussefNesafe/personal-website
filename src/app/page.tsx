@@ -5,9 +5,7 @@ const HomePage = () => {
   const { banner } = englishLocale.homepage
   return (
     <>
-
-      <Banner {...banner} className='mt-[10px] tablet:mt-[80px] desktop:mt-[80px] tablet:items-center' />
-
+      <Banner {...banner} className='mt-[2.78vw] tablet:mt-[10vw] desktop:mt-[5.84vw] tablet:items-center' />
     </>
   )
 }
