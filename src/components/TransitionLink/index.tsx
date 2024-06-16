@@ -13,7 +13,7 @@ export type TransitionLinkProps = {
 } & HTMLAttributes<HTMLElement> & VariantProps<typeof button>
 
 export const button = cva(
-  ['flex items-center text-[16px] tablet:text-[16px] desktop:text-[16px] px-[16px] py-[8px] tablet:px-[16px] tablet:py-[8px] desktop:px-[16px] desktop:py-[8px] transition-all']
+  ['flex items-center text-[4.448vw] tablet:text-[2vw] desktop:text-[1.168vw] px-[4.448vw] py-[2.224vw] tablet:px-[2vw] tablet:py-[1vw] desktop:px-[1.168vw] desktop:py-[0.584vw] transition-all']
   , {
     variants: {
       theme: {
