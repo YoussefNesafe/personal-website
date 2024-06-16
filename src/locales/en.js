@@ -1,5 +1,5 @@
 export const englishLocale = {
-  "navbar": {
+  navbar: {
     "links": [
       {
         "href": "/",
@@ -18,5 +18,15 @@ export const englishLocale = {
         "label": "contacts"
       }
     ]
+  },
+  homepage: {
+    banner: {
+      title: "Youssef Nesafe is a <br class='hidden desktop:block' /><span class='primary-text'>front-end developer</span>",
+      description: "He crafts responsive websites where technologies meet creativity",
+      button: {
+        label: "Contact me!!",
+        href: "/contacts"
+      }
+    }
   }
 };

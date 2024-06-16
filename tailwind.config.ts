@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/_sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -18,7 +19,8 @@ const config: Config = {
         2000: '2000ms',
       },
       transitionDuration: {
-        3000: '3000ms'
+        3000: '3000ms',
+        20: '20000ms'
       },
       colors: {
         background: '#282C33',
@@ -49,6 +51,18 @@ const config: Config = {
         "github-icon":{
           from : {transform: "translateY(0)"},
           to: {transform: "translateY(5.84vw)"}
+        },
+        "banner-rectangle-1":{
+          "0%, 100%" : {transform: "translate(0%,0%)"},
+          "25%": {transform: "translate(50%,0%)"},
+          "50%": {transform: "translate(50%,50%)"},
+          "75%": {transform: "translate(0%,50%)"},
+        },
+        "banner-rectangle-2":{
+          "0%, 100%" : {transform: "translate(0%,0%)"},
+          "25%": {transform: "translate(-50%,0%)"},
+          "50%": {transform: "translate(-50%,-50%)"},
+          "75%": {transform: "translate(0%,-50%)"},
         }
       },
       animation: {
@@ -58,6 +72,8 @@ const config: Config = {
         "media-balls": "media-balls 1.5s  linear",
         "email-icon": "email-icon 0.4s linear forwards",
         "github-icon": "github-icon 0.8s linear forwards",
+        "banner-rectangle-1": "banner-rectangle-1 20s infinite linear",
+        "banner-rectangle-2": "banner-rectangle-2 20s infinite linear",
       },
 
     },

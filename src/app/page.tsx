@@ -1,27 +1,13 @@
-import SectionTitle from '@/components/SectionTitle'
-import React from 'react'
+import Banner from '@/_sections/homepage/Banner'
+import { englishLocale } from '@/locales/en'
 
 const HomePage = () => {
+  const { banner } = englishLocale.homepage
   return (
     <>
-      <section >
-        <SectionTitle
-          title='projects'
-          link={{ label: 'View all', href: '/works', }}
-          line={{ size: 'xl', }}
-        />
-        <SectionTitle
-          title='Skills'
-          line={{ size: 'md', }}
-        />
-        <SectionTitle
-          title='About me'
-          line={{ size: 'lg', }}
-        />
-        <SectionTitle
-          title='Contacts'
-        />
-      </section>
+
+      <Banner {...banner} className='mt-[10px] tablet:mt-[80px] desktop:mt-[80px] tablet:items-center' />
+
     </>
   )
 }
