@@ -27,6 +27,10 @@ export const englishLocale = {
         label: "Contact me!!",
         href: "/contacts"
       }
+    },
+    quote: {
+      text: "All dreams are within reach. All you have to do is keep moving towards them.",
+      name: "- Viola Davis"
     }
   }
 };
