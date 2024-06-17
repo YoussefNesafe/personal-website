@@ -18,7 +18,7 @@ const Quote = ({ name, text, className, ...props }: QuoteProps) => {
   return (
     <section className={twMerge('justify-center', className)} {...props}>
       <div className='flex flex-col items-end '>
-        <div className='border border-gray p-[5.56vw] tablet:p-[4vw] desktop:p-[2.336vw] relative text-[4.448vw] tablet:text-[3vw] desktop:text-[1.533vw]'>
+        <div className='border border-gray p-[5.56vw] tablet:p-[4vw] desktop:p-[2.336vw] relative text-[4.448vw] tablet:text-[3vw] desktop:text-[1.5vw]'>
           <QuoteIcon className='-top-[3.336vw] left-[3.058vw] tablet:-top-[1.875vw] tablet:left-[1.375vw] desktop:-top-[1.095vw] desktop:left-[0.803vw]' />
           {text}
           <QuoteIcon className='-bottom-[3.336vw] right-[3.058vw] tablet:-bottom-[1.875vw] tablet:right-[1.375vw] desktop:-bottom-[1.095vw] desktop:right-[0.803vw]' />
