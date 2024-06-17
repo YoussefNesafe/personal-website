@@ -19,7 +19,7 @@
     @apply w-full
   }
   .section-py {
-    @apply py-[8.34vw] tablet:py-[7vw] desktop:py-[4.088vw]
+    @apply py-[10.34vw] tablet:py-[9vw] desktop:py-[6.088vw]
   }
 }
 

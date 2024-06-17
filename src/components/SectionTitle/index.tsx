@@ -1,7 +1,5 @@
 import React from 'react'
 import { SectionTitleProps } from './types'
-import Link from 'next/link'
-import RightArrow from '../icons/RightArrow'
 import { twMerge } from 'tailwind-merge'
 import { cva, VariantProps } from 'class-variance-authority'
 import TransitionLink from '../TransitionLink'
@@ -15,10 +13,10 @@ const SectionTitle = ({ title, link, line, ...props }: {
     , {
       variants: {
         size: {
-          'sm': ' w-[13.889vw] tablet:w-[11.25vw] desktop:w-[9.297vw]',
-          'md': ' w-[16.667vw] tablet:w-[22.5vw] desktop:w-[17.496vw]',
-          'lg': ' w-[19.444vw] tablet:w-[28.25vw] desktop:w-[23.865vw]',
-          'xl': ' w-[22.222vw] tablet:w-[31.25vw] desktop:w-[36.603vw]',
+          'sm': 'w-[10vw] tablet:w-[11.25vw] desktop:w-[9.297vw]',
+          'md': 'w-[10vw] tablet:w-[22.5vw] desktop:w-[17.496vw]',
+          'lg': 'w-[10vw] tablet:w-[28.25vw] desktop:w-[23.865vw]',
+          'xl': 'w-[10vw] tablet:w-[31.25vw] desktop:w-[36.603vw]',
         }
       },
       defaultVariants: {

@@ -1,3 +1,4 @@
+
 export const englishLocale = {
   navbar: {
     "links": [
@@ -31,6 +32,86 @@ export const englishLocale = {
     quote: {
       text: "All dreams are within reach. All you have to do is keep moving towards them.",
       name: "- Viola Davis"
+    },
+    projects: {
+      header: {
+        title: "projects",
+        link: {
+          label: 'view all',
+          href: '/works'
+        }
+      },
+      cards: [
+        {
+          image: {
+            src: "/images/projects/project1.jpg",
+            alt: "Project_1",
+            width: 331,
+            height: 201
+          },
+          technologies: "HTML, CSS, JavaScript, TDD",
+          details: {
+            projectName: "ChertNodes",
+            description: "Minecraft servers hosting",
+            buttons: [
+              {
+                label: "Live",
+                href: "/"
+              },
+              {
+                label: "Github",
+                href: "/"
+              }
+            ]
+          }
+        },
+        {
+          image: {
+            src: "/images/projects/project1.jpg",
+            alt: "Project_1",
+            width: 331,
+            height: 201
+          },
+          technologies: "HTML, CSS, JavaScript",
+          details: {
+            projectName: "ChertNodes",
+            description: "Minecraft servers hosting Minecraft servers hosting ",
+            buttons: [
+              {
+                label: "Live",
+                href: "/"
+              },
+              {
+                label: "Github",
+                href: "/"
+              }
+            ]
+          }
+        },
+        {
+          image: {
+            src: "/images/projects/project1.jpg",
+            alt: "Project_1",
+            width: 331,
+            height: 201
+          },
+          technologies: "HTML, CSS, JavaScript, TDD",
+          details: {
+            projectName: "ChertNodes",
+            description: "Minecraft servers hosting",
+            buttons: [
+              {
+                label: "Live",
+                href: "/"
+              },
+              {
+                label: "Github",
+                href: "/"
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 };
