@@ -64,6 +64,7 @@ const config: Config = {
           "50%": {transform: "translate(-50%,-50%)"},
           "75%": {transform: "translate(0%,-50%)"},
         }
+
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

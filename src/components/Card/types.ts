@@ -1,7 +1,6 @@
 import { ImageProps } from "next/image";
 import { HTMLAttributes } from "react";
-import { buttonCVA, TransitionLinkProps } from "../TransitionLink";
-import { VariantProps } from "class-variance-authority";
+import { TransitionLinkProps } from "../TransitionLink";
 
 export type CardProps = {
   image: ImageProps;

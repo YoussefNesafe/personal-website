@@ -12,11 +12,11 @@ const Card = ({ details, image, technologies, className, ...props }: CardProps) 
   return (
     <div className={cn('border border-gray relative', className)} {...props}>
       <div className='flex flex-col h-full' >
-        <div className='h-[55.878vw] tablet:h-[25.125vw] desktop:h-[14.673vw]'>
+        <div className='h-[55.878vw] tablet:h-[25.125vw] desktop:h-[14.673vw] w-full'>
           <Image
             {...image}
             alt={image?.alt}
-            className='object-cover h-[55.878vw] tablet:h-[25.125vw] desktop:h-[14.673vw] w-auto'
+            className='h-[55.878vw] tablet:h-[25.125vw] desktop:h-[14.673vw] w-full'
           />
         </div>
         <div className='border border-r-0 border-l-0 border-gray p-[2.224vw] tablet:p-[1vw] desktop:p-[0.584vw] text-gray text-[4.448vw] tablet:text-[2vw] desktop:text-[1.168vw]'>
